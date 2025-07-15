@@ -77,3 +77,41 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .dual-column {
+    flex-direction: column;
+  }
+  .hero-text {
+    margin-top: 0;
+    padding: 15px;
+  }
+  .hero-text h1 {
+    font-size: 2em;
+  }
+  .hero-text p {
+    font-size: 1em;
+  }
+  .cta-button {
+    padding: 10px 20px;
+  }
+  form {
+    padding: 15px;
+  }
+  input, textarea {
+    font-size: 1em;
+  }
+  button {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.5em;
+  }
+  .hero-text p {
+    font-size: 0.9em;
+  }
+}
