@@ -12,21 +12,31 @@
   </header>
   <main>
     <section class="content">
-      <form action="https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse" method="POST">
-        <label>First Name</label>
-        <input type="text" name="entry.123456789" required />
-        <label>Last Name</label>
-        <input type="text" name="entry.234567890" required />
-        <label>Email</label>
-        <input type="email" name="entry.345678901" required />
-        <label>Startup Name</label>
-        <input type="text" name="entry.456789012" />
-        <label>Startup Description</label>
-        <textarea name="entry.567890123" maxlength="500"></textarea>
-        <label>City</label>
-        <input type="text" name="entry.678901234" />
-        <button type="submit">Submit</button>
-      </form>
+    <form
+  action="https://formspree.io/f/myzjqkkd"
+  method="POST"
+>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required />
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="startupName">Startup Name:</label>
+      <input type="text" id="startupName" name="startupName" required />
+
+      <label for="description">Startup Description (max 500 characters):</label>
+      <textarea id="description" name="description" maxlength="500" rows="5" required></textarea>
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required />
+
+      <button type="submit">Submit Application</button>
+    </form>
+
     </section>
   </main>
 </body>
